@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 
-from lib.db.crud import story_crud
+from lib.db.crud import story
 
 
 def get_top_stories(
@@ -12,4 +12,4 @@ def get_top_stories(
     """
     Get the top stories from the database.
     """
-    return story_crud.get_top_stories(db, limit, source, category)
+    return story.get_top_stories(db, limit, source, category)

@@ -9,7 +9,7 @@ def get_top_stories(
     limit: int,
     source: str | None = None,
     category: str | None = None,
-):
+) -> list[Story]:
     """
     Get the top stories from the database.
     """

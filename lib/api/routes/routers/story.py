@@ -8,7 +8,7 @@ router = APIRouter()
 
 
 @router.get("/", description="Get all top stories", response_model=list[Story])
-async def get_top_stories(
+async def query_top_stories(
     limit: int = 10,
     category: str | None = None,
     source: str | None = None,
