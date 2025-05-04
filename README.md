@@ -70,7 +70,7 @@ python server.py
 ---
 
 Interactive docs:
-📘 Swagger: `host:port/api`
+* 📘 Swagger: `host:port/api`
 
 ---
 
