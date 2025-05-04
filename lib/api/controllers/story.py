@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from lib.db.crud import story_crud
 
 
-def get_top_stories(db: Session, limit: int = 10):
+def get_top_stories(db: Session, limit: int):
     """
     Get the top stories from the database.
     """
