@@ -20,7 +20,7 @@ The API Service serves as the interface between the frontend and the backend dat
 - **Python** 3.13
 - **FastAPI** for REST endpoints
 - **SQLAlchemy** for database access
-- **PostgreSQL** backend
+- **PostgreSQL** database
 - **Docker** for containerization
 - **GitHub Actions** for CI
 
@@ -70,7 +70,7 @@ python server.py
 ---
 
 Interactive docs:
-📘 Swagger: `host:port/api`
+* 📘 Swagger: `host:port/api`
 
 ---
 
