@@ -2,18 +2,13 @@ name: ci-pipeline
 
 on:
   push:
-    branches: ["main", "dev"]
+    branches: ["main"]
   pull_request:
     branches: ["main", "dev"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      DB_URL: ${{vars.DB_URL}}
-      HOST: ${{vars.HOST}}
-      PORT: ${{vars.PORT}}
-      ENV: TEST
     strategy:
       fail-fast: false
       matrix:
