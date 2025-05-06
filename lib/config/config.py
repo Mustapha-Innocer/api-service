@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_URL = os.getenv("DB_URL", "sqlite:///./test.db")
+DB_URL = os.getenv("DB_URL", "postgresql://username:password@host:port/dbname")
 
 HOST = os.getenv("HOST", "localhost")
 PORT = int(os.getenv("PORT", 8000))
